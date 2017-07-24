@@ -4,7 +4,7 @@ from watson_developer_cloud import PersonalityInsightsV3
 
 """
 The example returns a JSON response whose content is the same as that in
-   ../resources/personality-v3-expect2.txt
+   profile.json
 """
 
 personality_insights = PersonalityInsightsV3(

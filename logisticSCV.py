@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics, cross_validation
 from sklearn import datasets
 import pandas as pd
-df=pd.read_csv('dataSample1.csv')
+df=pd.read_csv('dataSampleNumber.csv')
 samples=df.loc[:,['Openness','Conscientousness','Extraversion','Agreeableness','Emotional_Range','Conversation','Openness to Change','Hedonism','Self-enhancement','Self-transcendence']]
 target=df.loc[:,'Profession']
 cv_folds = cross_validation.StratifiedKFold(target, n_folds=5, shuffle=False, random_state=0)

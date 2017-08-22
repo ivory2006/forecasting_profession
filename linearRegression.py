@@ -4,7 +4,7 @@ from sklearn.datasets import load_iris     # import datasets
 import pandas as pd
 from sklearn.model_selection import train_test_split,cross_val_score
 
-df=pd.read_csv('dataSample1.csv')
+df=pd.read_csv('dataSampleNumber.csv')
 
 samples=df.loc[:,['Openness','Conscientousness','Extraversion','Agreeableness','Emotional_Range','Conversation','Openness to Change','Hedonism','Self-enhancement','Self-transcendence']]
 target=df.loc[:,'Profession']
